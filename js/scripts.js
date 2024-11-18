@@ -83,6 +83,81 @@ document.getElementById('fahr_3').innerHTML=divisionresult;
     return result;
     
    }
+   var classification = [" jhon hill" ,"mary jane "  ,"gary vee","paricia mill","helen hali","paul green"]
+   classification.shift();
+   console.log(classification);
+
+   var classification = ["mary jane "  ,"gary vee","paricia mill","helen hali","paul green"]
+   classification.shift();
+   console.log(classification);
+
+ var classification = ["gary vee","paricia mill","helen hali","paul green"]
+   classification.shift();
+   console.log(classification);
+   document.getElementById("best_students").innerHTML=classification
+
+
+   var course ={
+      'title':"learn to code in paython 3",
+      'catagories':['programing','technolgy','python'],
+      '5_stars_reviews': 420,
+        '4_stars_reviews': 80,
+        '3_stars_reviews': 33,
+        '2_stars_reviews': 20,
+        '1_stars_reviews': 4
+   }
+console.log(course.title);
+document.getElementById("course_title").innerHTML=course.title
+
+console.log(course['catagories'][0]);
+document.getElementById("main_category").innerText=course['catagories'][0]
+var shoppingList = ['Milk',"Butter","Bread","Beer","rice","potatos", "chocolate"];
+shoppingList.pop();
+shoppingList.shift();
+shoppingList.unshift("chocolate");
+console.log( shoppingList);
+
+
+
+var shopingList = ['Milk',"Butter","Bread","Beer","rice","potatos", "chocolate"];
+shoppingList.push("Chesse");
+shoppingList.push("Egg");
+
+console.log(shoppingList);
+
+function sum_args(num1,num2,num3,num4,num5){
+   var sum = num1 + num2 + num3 + num4 + num5;
+   console.log(sum);
+}
+sum_args(420,80,33,20,4);
+var average =(420/557)*100;
+console.log(average);
+var roundNumber = Math.round ( 75.40394973070018);
+console.log(roundNumber);
+var name ="75";
+name += "%"
+console.log(name);
+document.getElementById("reviews_5_stars").innerHTML=name;
+document.getElementById("click-me").oneclick = function(){
+   alert('are u human');
+};
+document.getElementById("hover-me").oneclick = function(){
+   alert('take your cap');
+};
+document.getElementById("leave-me").oneclick = function(){
+   alert('you move too much');
+};
+document.getElementById("see-me").oneclick = function(){
+   alert('do not go there');
+};
+var button = document.getElementById("colour_button"); 
+button.onclick = function () {
+   document.getElementById("button_one") .style .display ="block";
+}
+document.getElementById("color_button").onclick = function(){
+   this.style['background-color'] ="orange"
+}
+
 
 //   document.getElementById("color_button").onclick = function() {
     
